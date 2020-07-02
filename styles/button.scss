@@ -1,0 +1,15 @@
+.btn {
+    color: $white;
+    border: 2px solid $white;
+    font-weight: 700;
+    border-radius: 30px;
+    background-color: transparent;
+
+    padding: 8px 24px;
+    cursor: pointer;
+    transition: transform 0.25s linear;
+    outline: none;
+    &:hover {
+        transform: scale(1.08);
+    }
+}

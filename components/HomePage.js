@@ -14,13 +14,13 @@ function HomePage() {
                                 <button className='btn'>Szukam pracy</button>
                             </a>
                         </Link>
-                        <Link href='/'>
+                        {/* <Link href='/'>
                             <a>
                                 <button className='btn'>
                                     Szukam pracownika
                                 </button>
                             </a>
-                        </Link>
+                        </Link> */}
                     </div>
                 </div>
             </div>

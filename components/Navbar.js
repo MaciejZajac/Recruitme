@@ -1,12 +1,25 @@
 import Link from 'next/link';
 import { useState } from 'react';
+import { useScrollPosition } from '@n8tb1t/use-scroll-position';
+
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
+    const [isOnTop, setIsOnTop] = useState(true);
+
+    useScrollPosition(({ prevPos, currPos }) => {
+        if (currPos.y < 0) {
+            setIsOnTop(false);
+        } else {
+            setIsOnTop(true);
+        }
+    });
 
     return (
         <div>
             <nav
-                className='navbar  is-fixed-top is-transparent'
+                className={`navbar  is-fixed-top is-transparent ${
+                    isOnTop ? 'navbar--ontop ' : ' is-light '
+                }`}
                 role='navigation'
                 aria-label='main navigation'
             >
