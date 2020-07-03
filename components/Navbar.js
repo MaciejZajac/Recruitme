@@ -1,8 +1,10 @@
 import Link from 'next/link';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { withRouter } from 'next/router';
 import { useScrollPosition } from '@n8tb1t/use-scroll-position';
 
-const Navbar = () => {
+const Navbar = ({ router }) => {
+    const [homePage, setHomePage] = useState(true);
     const [menuOpen, setMenuOpen] = useState(false);
     const [isOnTop, setIsOnTop] = useState(true);
 
@@ -14,9 +16,34 @@ const Navbar = () => {
         }
     });
 
+    useEffect(() => {
+        if (router.pathname !== '/') {
+            setHomePage(false);
+        } else {
+            setHomePage(true);
+        }
+    }, []);
+
+    const setNavbarTheme = () => {
+        let str = '';
+        if (!homePage) {
+            console.log('nie homepage');
+            str += 'is-light';
+        }
+
+        if (isOnTop && homePage) {
+            console.log('nie lol');
+            str = ' navbar--ontop';
+        } else {
+            str += ' is-light';
+        }
+
+        return str;
+    };
+
     return (
         <nav
-            className={`navbar  is-fixed-top is-transparent ${isOnTop ? 'navbar--ontop ' : ' is-light '}`}
+            className={`navbar  is-fixed-top is-transparent ${setNavbarTheme()} `}
             role='navigation'
             aria-label='main navigation'
         >
@@ -50,7 +77,7 @@ const Navbar = () => {
                         <Link href='/blog'>
                             <a className='navbar-item'>Blog</a>
                         </Link>
-                        <Link href='/kontakt'>
+                        <Link href='/contact'>
                             <a className='navbar-item'>Kontakt</a>
                         </Link>
                     </div>
@@ -60,4 +87,4 @@ const Navbar = () => {
     );
 };
 
-export default Navbar;
+export default withRouter(Navbar);

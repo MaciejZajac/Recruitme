@@ -15,6 +15,15 @@
     margin: 0;
     list-style: none;
 }
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 64px);
+    & > section {
+        flex-grow: 1;
+    }
+}
 @media (min-width: $desktop) {
     .navbar {
         background-color: transparent;
