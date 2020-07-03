@@ -24,9 +24,15 @@ function HomePage() {
                     </div>
                 </div>
             </div>
-            <div>
-                <div>Zobacz jak możemy wesprzeć twój biznes</div>
-            </div>
+            <section className='section'>
+                <div className='container'>
+                    <h1 className='title'>Zobacz jak możemy wesprzeć twój biznes</h1>
+                    <h2 className='subtitle'>
+                        Rozumiemy otoczenie biznesowe w którym działamy, dlatego proponujemy i wdrażamy rozwiązania IT
+                        najlepsze dla Twoich potrzeb biznesowych.
+                    </h2>
+                </div>
+            </section>
         </>
     );
 }

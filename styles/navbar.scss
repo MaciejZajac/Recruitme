@@ -4,11 +4,19 @@
     font-weight: 700;
     padding: 10px 25px;
 }
+.footer {
+    &__link {
+        padding: 15px;
+    }
+}
 
+.content ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
 @media (min-width: $desktop) {
     .navbar {
-        max-width: 1300px;
-        margin: 0 auto;
         background-color: transparent;
         transition: all 0.25s ease-in-out;
         &--ontop {
