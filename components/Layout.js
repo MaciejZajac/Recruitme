@@ -1,9 +1,11 @@
 import Navbar from './Navbar';
 import Head from 'next/head';
+import { Html } from 'next/document';
 import '../styles/style.scss';
 const Layout = (props) => (
     <div>
         <Head>
+            <Html lang='en' />
             <meta
                 name='viewport'
                 content='width=device-width, initial-scale=1'
