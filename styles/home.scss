@@ -11,6 +11,10 @@
         min-height: 200px;
     }
 
+    &__button {
+        z-index: 99;
+    }
+
     &__intro {
         @include flex(column);
         height: inherit;

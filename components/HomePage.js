@@ -1,14 +1,49 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
+import Particles from 'react-particles-js';
 
 function HomePage() {
+    const [isDesktop, setIsDesktop] = useState(true);
+    useEffect(() => {
+        let screenSize;
+        if (window.matchMedia('(max-width: 1024px)').matches) {
+            setIsDesktop(false);
+        } else {
+            setIsDesktop(true);
+        }
+    }, []);
     return (
         <>
             <div className='home'>
+                {isDesktop && (
+                    <Particles
+                        params={{
+                            particles: {
+                                number: {
+                                    value: 150,
+                                },
+                                size: {
+                                    value: 3,
+                                },
+                            },
+                            interactivity: {
+                                events: {
+                                    onhover: {
+                                        enable: true,
+                                        mode: 'repulse',
+                                    },
+                                },
+                            },
+                        }}
+                        style={{
+                            position: 'absolute',
+                        }}
+                    />
+                )}
                 <div className='home__intro'>
                     <h2>Let's create</h2>
                     <h1>RealITy together!</h1>
-                    <div>
+                    <div className='home__button'>
                         <Link href='/'>
                             <a>
                                 <button className='btn'>Szukam pracy</button>
