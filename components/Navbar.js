@@ -27,12 +27,10 @@ const Navbar = ({ router }) => {
     const setNavbarTheme = () => {
         let str = '';
         if (!homePage) {
-            console.log('nie homepage');
             str += 'is-light';
         }
 
         if (isOnTop && homePage) {
-            console.log('nie lol');
             str = ' navbar--ontop';
         } else {
             str += ' is-light';

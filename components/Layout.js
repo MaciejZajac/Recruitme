@@ -10,13 +10,11 @@ const Layout = ({ children, router }) => {
     const [homePage, setHomePage] = useState(true);
 
     useEffect(() => {
-        console.log('router', router);
         if (router.pathname !== '/') {
             setHomePage(false);
         } else {
             setHomePage(true);
         }
-        console.log('homePage', homePage);
     }, []);
 
     return (

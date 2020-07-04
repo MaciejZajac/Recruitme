@@ -18,13 +18,12 @@ const ContactPage = () => {
                         </h2>
                     </div>
                     <div className='column'>
-                        <form onSubmit={handleSubmit(onSubmit)}>
+                        <form className='form' onSubmit={handleSubmit(onSubmit)}>
                             <div className='field'>
-                                <label className='label'>Imię</label>
                                 <div className='control'>
                                     <input
                                         name='name'
-                                        className='input'
+                                        className={`input ${errors.name ? 'input-error' : null}`}
                                         type='text'
                                         placeholder='Imię'
                                         ref={register({ required: true, pattern: /^[A-Za-z]+$/i, maxLength: 30 })}
@@ -32,32 +31,40 @@ const ContactPage = () => {
                                 </div>
                             </div>
                             <div className='field'>
-                                <label className='label'>Nazwisko</label>
                                 <div className='control'>
                                     <input
                                         name='surname'
-                                        className='input'
+                                        className={`input ${errors.name ? 'input-error' : null}`}
                                         type='text'
                                         placeholder='Nazwisko'
                                         ref={register({ required: true, pattern: /^[A-Za-z]+$/i, maxLength: 30 })}
                                     />
                                 </div>
                             </div>
-                            <div class='field'>
-                                <label class='label'>Wiadomość</label>
-                                <div class='control'>
+                            <div className='field'>
+                                <div className='control'>
                                     <textarea
                                         name='message'
-                                        class='textarea'
+                                        className='textarea'
                                         placeholder='Wiadomość...'
                                         ref={register({ required: true })}
-                                    ></textarea>
+                                    />
                                 </div>
                             </div>
 
-                            {errors.exampleRequired && <span>This field is required</span>}
+                            <div className='field'>
+                                <label className='checkbox'>
+                                    <input
+                                        name='agreement'
+                                        type='checkbox'
+                                        className={`form__checkbox ${errors.agreement ? 'form__checkbox-error' : null}`}
+                                        ref={register({ required: true })}
+                                    />
+                                    *Tak, zapoznałem/am się z <a href='#'>Polityką Prywatności</a>
+                                </label>
+                            </div>
 
-                            <button type='submit' class='button is-primary'>
+                            <button type='submit' className='button button--form'>
                                 Primary
                             </button>
                         </form>
