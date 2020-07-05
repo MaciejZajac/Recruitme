@@ -24,24 +24,11 @@ const Navbar = ({ router }) => {
         }
     }, []);
 
-    const setNavbarTheme = () => {
-        let str = '';
-        if (!homePage) {
-            str += 'is-light';
-        }
-
-        if (isOnTop && homePage) {
-            str = ' navbar--ontop';
-        } else {
-            str += ' is-light';
-        }
-
-        return str;
-    };
-
     return (
         <nav
-            className={`navbar  is-fixed-top is-transparent ${setNavbarTheme()} `}
+            className={`navbar  is-fixed-top is-transparent ${
+                isOnTop ? 'navbar--ontop' : 'is-light'
+            }`}
             role='navigation'
             aria-label='main navigation'
         >
@@ -52,7 +39,9 @@ const Navbar = ({ router }) => {
 
                 <a
                     role='button'
-                    className={`navbar-burger burger ${menuOpen ? 'is-active' : ''}`}
+                    className={`navbar-burger burger ${
+                        menuOpen ? 'is-active' : ''
+                    }`}
                     aria-label='menu'
                     aria-expanded='false'
                     onClick={() => setMenuOpen(!menuOpen)}
@@ -67,19 +56,57 @@ const Navbar = ({ router }) => {
                 <div className='navbar-end'>
                     <div className='navbar-item'>
                         <Link href='/'>
-                            <a className='navbar-item'>Home</a>
+                            <a
+                                className={`navbar-item ${
+                                    router.pathname === '/' ? 'is-active' : ''
+                                }`}
+                            >
+                                Home
+                            </a>
                         </Link>
                         <Link href='/offers'>
-                            <a className='navbar-item'>Oferty</a>
+                            <a
+                                className={`navbar-item ${
+                                    router.pathname === '/offers'
+                                        ? 'is-active'
+                                        : ''
+                                }`}
+                            >
+                                Oferty
+                            </a>
                         </Link>
                         <Link href='/about'>
-                            <a className='navbar-item'>O nas</a>
+                            <a
+                                className={`navbar-item ${
+                                    router.pathname === '/about'
+                                        ? 'is-active'
+                                        : ''
+                                }`}
+                            >
+                                O nas
+                            </a>
                         </Link>
                         <Link href='/blog'>
-                            <a className='navbar-item'>Blog</a>
+                            <a
+                                className={`navbar-item ${
+                                    router.pathname === '/blog'
+                                        ? 'is-active'
+                                        : ''
+                                }`}
+                            >
+                                Blog
+                            </a>
                         </Link>
                         <Link href='/contact'>
-                            <a className='navbar-item'>Kontakt</a>
+                            <a
+                                className={`navbar-item ${
+                                    router.pathname === '/contact'
+                                        ? 'is-active'
+                                        : ''
+                                }`}
+                            >
+                                Kontakt
+                            </a>
                         </Link>
                     </div>
                 </div>

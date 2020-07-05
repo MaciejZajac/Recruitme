@@ -1,24 +1,24 @@
 {
-  "name": "recruterpage",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
-  },
-  "dependencies": {
-    "@n8tb1t/use-scroll-position": "^1.0.43",
-    "@zeit/next-css": "^1.0.1",
-    "@zeit/next-sass": "^1.0.1",
-    "bulma": "^0.9.0",
-    "next": "9.4.4",
-    "node-sass": "^4.14.1",
-    "react": "16.13.1",
-    "react-dom": "16.13.1",
-    "react-hook-form": "^6.0.1",
-    "react-particles-js": "^3.2.1",
-    "sass": "^1.26.9",
-    "use-scroll-position": "0.0.4"
-  }
+    "name": "recruterpage",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start"
+    },
+    "dependencies": {
+        "@n8tb1t/use-scroll-position": "^1.0.43",
+        "@zeit/next-css": "^1.0.1",
+        "@zeit/next-sass": "^1.0.1",
+        "bulma": "^0.9.0",
+        "next": "9.4.4",
+        "node-sass": "^4.14.1",
+        "react": "16.13.1",
+        "react-dom": "16.13.1",
+        "react-hook-form": "^6.0.1",
+        "react-particles-js": "^3.2.1",
+        "sass": "^1.26.9",
+        "use-scroll-position": "0.0.4"
+    }
 }
