@@ -1,21 +1,14 @@
 import Offer from './Offer';
 import Link from 'next/link';
+import OfferList from './OfferList';
 
 const OfferSection = () => {
     return (
         <section className='section'>
-            <div className='columns  '>
-                <div className='column '>
-                    <div className='columns is-multiline'>
-                        {offerArr.map((item) => {
-                            return <Offer item={item} key={item.id} />;
-                        })}
-                    </div>
-                </div>
-            </div>
+            <OfferList list={offerArr} />
             <div className='flex pb-6'>
                 <div className='home__button'>
-                    <Link href='/'>
+                    <Link href='/offers'>
                         <a>
                             <button className='btn btn--black'>Więcej ofert</button>
                         </a>
@@ -31,7 +24,6 @@ export default OfferSection;
 const offerArr = [
     {
         position: 'Front-end developer',
-        mainTech: ['React', 'JavaScript', 'HTML', 'CSS'],
         salaryFrom: 5000,
         salaryTo: 10000,
         city: 'Kraków',
@@ -40,7 +32,6 @@ const offerArr = [
     },
     {
         position: 'Back-end developer',
-        mainTech: ['Java', 'Spring', 'Hibernate'],
         salaryFrom: 6500,
         salaryTo: 11000,
         city: 'Kraków',

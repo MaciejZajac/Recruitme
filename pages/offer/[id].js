@@ -1,9 +1,10 @@
 import Layout from '../../components/Layout';
+import OfferPage from '../../components/OfferComponents/OfferPage';
 
 const Offer = () => {
     return (
         <Layout>
-            <section>Hello</section>
+            <OfferPage />
         </Layout>
     );
 };

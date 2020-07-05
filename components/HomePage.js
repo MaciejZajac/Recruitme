@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import Particles from 'react-particles-js';
-import OfferSection from './OfferSection';
+import OfferSection from './OfferComponents/OfferSection';
 
 function HomePage() {
     const [isDesktop, setIsDesktop] = useState(true);
     useEffect(() => {
-        let screenSize;
         if (window.matchMedia('(max-width: 1024px)').matches) {
             setIsDesktop(false);
         } else {

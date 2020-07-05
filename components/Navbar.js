@@ -69,6 +69,9 @@ const Navbar = ({ router }) => {
                         <Link href='/'>
                             <a className='navbar-item'>Home</a>
                         </Link>
+                        <Link href='/offers'>
+                            <a className='navbar-item'>Oferty</a>
+                        </Link>
                         <Link href='/about'>
                             <a className='navbar-item'>O nas</a>
                         </Link>
