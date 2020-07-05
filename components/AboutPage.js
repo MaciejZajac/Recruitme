@@ -1,29 +1,25 @@
-import Link from 'next/link';
+import Link from 'next/link'
 
 const AboutPage = () => {
     return (
         <>
-            <div className='home home--30' />
+            <div className="home home--30" />
 
-            <section className='section'>
-                <div className='columns'>
-                    <div className='column'>
-                        <div className='container'>
-                            <h1 className='title'>Kim jesteśmy ?</h1>
-                            <h2 className='subtitle'>
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit. Fusce vel pretium turpis, vitae
-                                blandit ex. Quisque sodales velit nec enim
-                                consequat consectetur. Cras lacinia rhoncus
-                                purus, at lobortis velit ornare luctus. Duis
-                                semper odio neque, a vulputate velit commodo
-                                quis. Morbi auctor pharetra risus, sodales
-                                pulvinar metus auctor ac.
+            <section className="section">
+                <div className="columns">
+                    <div className="column">
+                        <div className="container">
+                            <h1 className="title">Kim jesteśmy ?</h1>
+                            <h2 className="subtitle">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel pretium turpis, vitae
+                                blandit ex. Quisque sodales velit nec enim consequat consectetur. Cras lacinia rhoncus
+                                purus, at lobortis velit ornare luctus. Duis semper odio neque, a vulputate velit
+                                commodo quis. Morbi auctor pharetra risus, sodales pulvinar metus auctor ac.
                             </h2>
                         </div>
                     </div>
-                    <div className='column'>
-                        <div className='about__image' />
+                    <div className="column">
+                        <div className="about__image" />
                     </div>
                 </div>
             </section>
@@ -45,7 +41,7 @@ const AboutPage = () => {
                 </div>
             </div> */}
         </>
-    );
-};
+    )
+}
 
-export default AboutPage;
+export default AboutPage
