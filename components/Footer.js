@@ -10,12 +10,18 @@ const Footer = () => {
                             <div className='column '>
                                 <ul className='footer__list'>
                                     <li>
-                                        <a href='https://github.com/MaciejZajac' className='footer__link'>
+                                        <a
+                                            href='https://github.com/MaciejZajac'
+                                            className='footer__link'
+                                        >
                                             Github
                                         </a>
                                     </li>
                                     <li>
-                                        <a href='https://www.linkedin.com/in/maciejzajac534/' className='footer__link'>
+                                        <a
+                                            href='https://www.linkedin.com/in/maciejzajac534/'
+                                            className='footer__link'
+                                        >
                                             Linkedin
                                         </a>
                                     </li>
