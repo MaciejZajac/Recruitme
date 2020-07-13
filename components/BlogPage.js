@@ -1,9 +1,12 @@
+import Hero from './Hero'
+
 const BlogPage = () => {
     return (
-        <div>
+        <>
             <div className="home home--30" />
-            hello
-        </div>
+            <Hero />
+            <div>hello</div>
+        </>
     )
 }
 

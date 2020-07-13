@@ -1,31 +1,31 @@
-const { default: Link } = require('next/link');
+const { default: Link } = require('next/link')
 
 const Offer = ({ item }) => {
-    let wynagrodzenie = '';
+    let wynagrodzenie = ''
     if (item.salaryFrom) {
-        wynagrodzenie += 'Od ' + item.salaryFrom + ' zł ';
+        wynagrodzenie += 'Od ' + item.salaryFrom + ' zł '
     }
     if (item.salaryTo) {
-        wynagrodzenie += 'do ' + item.salaryTo + ' zł';
+        wynagrodzenie += 'do ' + item.salaryTo + ' zł'
     }
 
     return (
-        <Link href='/offer/[id]' as={`/offer/${item.id}`}>
-            <a className='column is-half-tablet is-one-third-desktop'>
+        <Link href="/offer/[id]" as={`/offer/${item.id}`}>
+            <a className="column is-half-tablet is-one-third-desktop">
                 <div>
-                    <div className='offer'>
-                        Pozycja: {item.position}
+                    <div className="offer">
+                        <strong>Pozycja:</strong> {item.position}
                         <br />
-                        Wynagrodzenie: {wynagrodzenie}
+                        <strong>Wynagrodzenie:</strong> {wynagrodzenie}
                         <br />
-                        Doświadczenie: {item.experience} rok
+                        <strong>Doświadczenie:</strong> {item.experience} rok
                         <br />
-                        Lokalizacja: {item.city}
+                        <strong>Lokalizacja:</strong> {item.city}
                     </div>
                 </div>
             </a>
         </Link>
-    );
-};
+    )
+}
 
-export default Offer;
+export default Offer
