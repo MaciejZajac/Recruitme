@@ -5,26 +5,26 @@ import Hero from '../Hero'
 
 const OffersPage = () => {
     const [activefilter, setActiveFilter] = React.useState('')
+
+    const handleChangeFilter = type => {
+        if (activefilter === type) {
+            setActiveFilter('')
+        } else {
+            setActiveFilter(type)
+        }
+    }
     return (
         <>
             <div className="home home--30" />
             <Hero />
-            {/* <Filters /> */}
             <section className="container">
-                <div className="flex">
+                <div className="flex flex--wrap">
                     {filterArr.map((item, index) => {
                         return (
                             <div
                                 key={index}
-                                onClick={() => setActiveFilter(item)}
-                                style={{
-                                    padding: '15px',
-                                    border: '1px solid black',
-                                    margin: '0 10px',
-                                    cursor: 'pointer',
-                                    transform: item.type === activefilter.type ? 'scale(1.05)' : '',
-                                }}
-                            >
+                                onClick={() => handleChangeFilter(item.type)}
+                                className={`offer__box ${item.type === activefilter ? 'offer__box--active' : ''}`}>
                                 {item.type}
                             </div>
                         )
@@ -32,7 +32,7 @@ const OffersPage = () => {
                 </div>
             </section>
             <section className="section">
-                <OfferList list={offerArr} />
+                <OfferList list={offerArr} filter={activefilter} />
             </section>
         </>
     )

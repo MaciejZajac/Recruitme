@@ -35,10 +35,9 @@ const OfferPage = ({ obj }) => {
                         <div className="container pb-6">
                             <h1 className="title">Project</h1>
                             <p>
-                                Developing modules and algorithms that collect and process data for autonomous driving
-                                systems e.g. sensing and perception, calibration of sensing setup, motion controller,
-                                trajectory planning, ODD implementation, driver state, degradation modes, various
-                                algorithms optimization and adjustment.
+                                Developing modules and algorithms that collect and process data for autonomous driving systems e.g. sensing
+                                and perception, calibration of sensing setup, motion controller, trajectory planning, ODD implementation,
+                                driver state, degradation modes, various algorithms optimization and adjustment.
                             </p>
                         </div>
 
@@ -47,10 +46,7 @@ const OfferPage = ({ obj }) => {
                             <ul className="offer__list">
                                 <li>MSc degree in Electronics or Computer Science or related</li>
                                 <li>Very good knowledge in C programming language</li>
-                                <li>
-                                    Minimum 2 years of experience on similar position and minimum 5 years for senior
-                                    position
-                                </li>
+                                <li>Minimum 2 years of experience on similar position and minimum 5 years for senior position</li>
                                 <li>Ability to speak, read, and write English</li>
                             </ul>
                         </div>
@@ -61,9 +57,8 @@ const OfferPage = ({ obj }) => {
                             <ul className="offer__list">
                                 <li>Implementation, configuration and maintenance of embedded software</li>
                                 <li>
-                                    Collecting and analyzing software requirements, preparing software design
-                                    documentation, programming software modules, preparing and performing tests to
-                                    verify software work products
+                                    Collecting and analyzing software requirements, preparing software design documentation, programming
+                                    software modules, preparing and performing tests to verify software work products
                                 </li>
                                 <li>Troubleshooting</li>
                                 <li>Continuous development of professional qualifications</li>

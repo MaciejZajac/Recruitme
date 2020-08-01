@@ -2,6 +2,7 @@
 const offerArr = [
     {
         position: 'Front-end developer',
+        tech: 'React',
         salaryFrom: 5000,
         salaryTo: 10000,
         city: 'Kraków',
@@ -10,6 +11,7 @@ const offerArr = [
     },
     {
         position: 'Back-end developer',
+        tech: 'Java',
         salaryFrom: 6500,
         salaryTo: 11000,
         city: 'Kraków',
@@ -18,6 +20,7 @@ const offerArr = [
     },
     {
         position: 'DevOps Engineer',
+        tech: 'Linux',
         salaryFrom: 8000,
         salaryTo: 14000,
         city: 'Kraków',
@@ -26,6 +29,7 @@ const offerArr = [
     },
     {
         position: 'UX/UI designer',
+        tech: 'Sketch',
         salaryFrom: 4500,
         salaryTo: 7800,
         city: 'Kraków',
@@ -34,6 +38,7 @@ const offerArr = [
     },
     {
         position: 'Project Manager',
+        tech: 'PM',
         salaryFrom: 8000,
         salaryTo: 15000,
         city: 'Kraków',
@@ -42,6 +47,7 @@ const offerArr = [
     },
     {
         position: 'QA Tester',
+        tech: 'Java',
         salaryFrom: 6000,
         salaryTo: 90000,
         city: 'Kraków',
@@ -50,7 +56,7 @@ const offerArr = [
     },
     {
         position: 'Back-end developer',
-        mainTech: ['Java', 'Spring', 'Hibernate'],
+        tech: 'Java',
         salaryFrom: 6500,
         salaryTo: 11000,
         city: 'Kraków',
@@ -59,6 +65,7 @@ const offerArr = [
     },
     {
         position: 'DevOps Engineer',
+        tech: 'Java',
         salaryFrom: 8000,
         salaryTo: 14000,
         city: 'Kraków',
@@ -67,6 +74,7 @@ const offerArr = [
     },
     {
         position: 'UX/UI designer',
+        tech: 'Java',
         salaryFrom: 4500,
         salaryTo: 7800,
         city: 'Kraków',
@@ -75,6 +83,7 @@ const offerArr = [
     },
     {
         position: 'Project Manager',
+        tech: 'Java',
         salaryFrom: 8000,
         salaryTo: 15000,
         city: 'Kraków',
@@ -83,6 +92,7 @@ const offerArr = [
     },
     {
         position: 'QA Tester',
+        tech: 'Angular',
         salaryFrom: 6000,
         salaryTo: 90000,
         city: 'Kraków',
@@ -91,7 +101,7 @@ const offerArr = [
     },
     {
         position: 'Back-end developer',
-        mainTech: ['Java', 'Spring', 'Hibernate'],
+        tech: 'Angular',
         salaryFrom: 6500,
         salaryTo: 11000,
         city: 'Kraków',
@@ -100,6 +110,7 @@ const offerArr = [
     },
     {
         position: 'DevOps Engineer',
+        tech: 'Angular',
         salaryFrom: 8000,
         salaryTo: 14000,
         city: 'Kraków',
@@ -108,6 +119,7 @@ const offerArr = [
     },
     {
         position: 'UX/UI designer',
+        tech: 'Vue',
         salaryFrom: 4500,
         salaryTo: 7800,
         city: 'Kraków',
@@ -116,6 +128,7 @@ const offerArr = [
     },
     {
         position: 'Project Manager',
+        tech: 'Vue',
         salaryFrom: 8000,
         salaryTo: 15000,
         city: 'Kraków',
@@ -124,6 +137,7 @@ const offerArr = [
     },
     {
         position: 'QA Tester',
+        tech: 'Vue',
         salaryFrom: 6000,
         salaryTo: 90000,
         city: 'Kraków',
@@ -132,6 +146,7 @@ const offerArr = [
     },
     {
         position: 'UX/UI designer',
+        tech: 'Vue',
         salaryFrom: 4500,
         salaryTo: 7800,
         city: 'Kraków',
@@ -140,6 +155,7 @@ const offerArr = [
     },
     {
         position: 'Project Manager',
+        tech: 'React',
         salaryFrom: 8000,
         salaryTo: 15000,
         city: 'Kraków',
@@ -148,6 +164,7 @@ const offerArr = [
     },
     {
         position: 'QA Tester',
+        tech: 'React',
         salaryFrom: 6000,
         salaryTo: 90000,
         city: 'Kraków',
@@ -156,12 +173,13 @@ const offerArr = [
     },
     {
         position: 'Project Manager',
+        tech: 'React',
         salaryFrom: 8000,
         salaryTo: 15000,
         city: 'Kraków',
         experience: 3,
         id: 20,
     },
-];
+]
 
-export { offerArr };
+export { offerArr }
